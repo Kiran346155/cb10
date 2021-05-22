@@ -40,7 +40,7 @@ function setup(){
 }
 
 function draw(){
-    background("black");
+    background("green");
     
     Engine.update(engine);
     console.log(box2.body.position.x);
