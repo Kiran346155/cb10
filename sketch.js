@@ -35,10 +35,13 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    platform1 = new Ground (100,300,300,170)
+
 }
 
 function draw(){
-    background(backgroundImg);
+    background("black");
+    
     Engine.update(engine);
     console.log(box2.body.position.x);
     console.log(box2.body.position.y);
@@ -59,4 +62,5 @@ function draw(){
     log5.display();
 
     bird.display();
+    platform1.display();
 }
